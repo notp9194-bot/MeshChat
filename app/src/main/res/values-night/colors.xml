@@ -1,0 +1,15 @@
+<resources>
+    <color name="primary">#8B64F0</color>
+    <color name="primary_dark">#B9A0FF</color>
+    <color name="ink">#F1EEFC</color>
+    <color name="sub">#A29BBE</color>
+    <color name="card">#2A2342</color>
+    <color name="stroke">#3A3158</color>
+    <color name="soft">#3A3158</color>
+    <color name="green">#34C77B</color>
+    <color name="surface">#1B1730</color>
+    <color name="bg_top">#120F20</color>
+    <color name="bg_bottom">#1B1730</color>
+    <color name="ring">#4A3F72</color>
+    <color name="ring_fill">#241D3C</color>
+</resources>

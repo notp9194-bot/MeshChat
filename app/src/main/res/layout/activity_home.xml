@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="52dp" android:gravity="center_vertical" android:orientation="horizontal">
+        <ImageView android:id="@+id/btnPeople" android:layout_width="44dp" android:layout_height="44dp" android:padding="9dp" android:src="@drawable/ic_people" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="Mesh Chat" android:textColor="@color/ink" android:textSize="21sp" android:textStyle="bold" />
+        <ImageView android:id="@+id/btnGear" android:layout_width="44dp" android:layout_height="44dp" android:padding="9dp" android:src="@drawable/ic_settings" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cardBt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/bg_card" android:gravity="center_vertical" android:orientation="horizontal" android:padding="18dp">
+        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_bluetooth" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bluetooth" android:textColor="@color/ink" android:textSize="18sp" android:textStyle="bold" />
+            <TextView android:id="@+id/btSub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/sub" android:textSize="14sp" />
+        </LinearLayout>
+        <TextView android:id="@+id/btBadge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_badge_on" android:paddingStart="14dp" android:paddingTop="4dp" android:paddingEnd="14dp" android:paddingBottom="4dp" android:text="On" android:textColor="@color/white" android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cardMesh" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:background="@drawable/bg_card" android:gravity="center_vertical" android:orientation="horizontal" android:padding="18dp">
+        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_mesh" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mesh Network" android:textColor="@color/ink" android:textSize="18sp" android:textStyle="bold" />
+            <TextView android:id="@+id/meshSub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/sub" android:textSize="14sp" />
+        </LinearLayout>
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_chevron" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+        <LinearLayout android:id="@+id/tileChats" android:layout_width="0dp" android:layout_height="116dp" android:layout_margin="6dp" android:layout_weight="1" android:background="@drawable/bg_card" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" android:gravity="center" android:orientation="vertical">
+            <ImageView android:layout_width="38dp" android:layout_height="38dp" android:src="@drawable/ic_chat" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Chats" android:textColor="@color/ink" android:textSize="16sp" android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/tileNearby" android:layout_width="0dp" android:layout_height="116dp" android:layout_margin="6dp" android:layout_weight="1" android:background="@drawable/bg_card" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" android:gravity="center" android:orientation="vertical">
+            <ImageView android:layout_width="38dp" android:layout_height="38dp" android:src="@drawable/ic_people" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Nearby" android:textColor="@color/ink" android:textSize="16sp" android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <LinearLayout android:id="@+id/tileMesh" android:layout_width="0dp" android:layout_height="116dp" android:layout_margin="6dp" android:layout_weight="1" android:background="@drawable/bg_card" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" android:gravity="center" android:orientation="vertical">
+            <ImageView android:layout_width="38dp" android:layout_height="38dp" android:src="@drawable/ic_mesh" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Mesh Status" android:textColor="@color/ink" android:textSize="16sp" android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/tileSettings" android:layout_width="0dp" android:layout_height="116dp" android:layout_margin="6dp" android:layout_weight="1" android:background="@drawable/bg_card" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" android:gravity="center" android:orientation="vertical">
+            <ImageView android:layout_width="38dp" android:layout_height="38dp" android:src="@drawable/ic_settings" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Settings" android:textColor="@color/ink" android:textSize="16sp" android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

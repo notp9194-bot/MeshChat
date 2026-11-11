@@ -1,0 +1,17 @@
+<resources>
+    <color name="primary">#6C3CE1</color>
+    <color name="primary_dark">#5528C4</color>
+    <color name="ink">#1E1738</color>
+    <color name="sub">#8A84A3</color>
+    <color name="card">#EFEAFC</color>
+    <color name="stroke">#E0D6FA</color>
+    <color name="soft">#E4DBFB</color>
+    <color name="green">#1FA855</color>
+    <color name="red">#E5484D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="bg_top">#FFFFFF</color>
+    <color name="bg_bottom">#EEE7FD</color>
+    <color name="ring">#D9CEF7</color>
+    <color name="ring_fill">#F1ECFD</color>
+</resources>

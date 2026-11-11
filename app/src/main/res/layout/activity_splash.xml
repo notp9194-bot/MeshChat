@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_screen" android:gravity="center" android:orientation="vertical" android:padding="32dp">
+    <FrameLayout android:layout_width="250dp" android:layout_height="250dp">
+        <View android:id="@+id/ring1" android:layout_width="250dp" android:layout_height="250dp" android:background="@drawable/bg_ring" />
+        <View android:id="@+id/ring2" android:layout_width="180dp" android:layout_height="180dp" android:layout_gravity="center" android:background="@drawable/bg_ring_soft" />
+        <FrameLayout android:layout_width="104dp" android:layout_height="104dp" android:layout_gravity="center" android:background="@drawable/bg_circle_primary">
+            <ImageView android:layout_width="56dp" android:layout_height="56dp" android:layout_gravity="center" android:src="@drawable/ic_bluetooth" android:tint="@color/white" />
+        </FrameLayout>
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_gravity="top|center_horizontal" android:src="@drawable/ic_phone_android" />
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_gravity="bottom|center_horizontal" android:src="@drawable/ic_phone_android" />
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_gravity="start|center_vertical" android:src="@drawable/ic_phone_android" />
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_gravity="end|center_vertical" android:src="@drawable/ic_phone_android" />
+    </FrameLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="Mesh Chat" android:textColor="@color/primary_dark" android:textSize="38sp" android:textStyle="bold" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Offline • Nearby • Connected" android:textColor="@color/ink" android:textSize="16sp" android:textStyle="bold" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:gravity="center" android:text="Chat without Internet\nvia Bluetooth Mesh" android:textColor="@color/sub" android:textSize="15sp" />
+    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="120dp" android:layout_height="4dp" android:layout_marginTop="40dp" android:indeterminate="true" android:indeterminateTint="@color/primary" />
+</LinearLayout>
