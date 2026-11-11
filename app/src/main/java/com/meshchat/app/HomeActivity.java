@@ -24,9 +24,10 @@ public class HomeActivity extends BaseActivity {
         btSub = findViewById(R.id.btSub); btBadge = findViewById(R.id.btBadge); meshSub = findViewById(R.id.meshSub);
 
         findViewById(R.id.cardBt).setOnClickListener(v -> {
-            if (!mesh.isBluetoothOn()) {
-                try { startActivity(new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)); } catch (Exception ignored) { }
-            }
+            try {
+                if (!mesh.isBluetoothOn()) startActivity(new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE));
+                else startActivity(new Intent(android.provider.Settings.ACTION_BLUETOOTH_SETTINGS)); // apps cannot switch BT off themselves
+            } catch (Exception ignored) { }
         });
         findViewById(R.id.cardMesh).setOnClickListener(v -> {
             if (!Prefs.joined(this)) { Prefs.setJoined(this, true); mesh.start(); MeshService.ensure(this); refresh(); }
@@ -80,7 +81,7 @@ public class HomeActivity extends BaseActivity {
         boolean on = mesh.isBluetoothOn();
         btBadge.setText(on ? "On" : "Off");
         btBadge.setBackgroundResource(on ? R.drawable.bg_badge_on : R.drawable.bg_badge_off);
-        btSub.setText(on ? "Ready to connect" : "Tap to turn on");
+        btSub.setText(on ? "Ready to connect • tap for settings" : "Tap to turn on");
         if (!Prefs.joined(this)) meshSub.setText("Not joined • tap to join");
         else if (!MeshManager.hasPerms(this)) meshSub.setText("Permission needed");
         else meshSub.setText(mesh.peers().size() + " Devices Nearby");
